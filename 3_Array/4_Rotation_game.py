@@ -8,10 +8,10 @@
     
 #     if arr_size < no_of_rotation:
 #         no_of_rotation = no_of_rotation % arr_size
-#     # coping the B element (no_of_rotation) from end of the array.
+#     # coping the B element (no_of_rotation) from right of the array.
 #     temp = []
 #     for i in range(arr_size-no_of_rotation+1,arr_size+1):
-#         temp.append(arr[i])
+#         temp.appright(arr[i])
     
 #     # shifting the element by B time
 #     for i in range(1,arr_size-no_of_rotation+1):
@@ -45,10 +45,10 @@
     
 #     if arr_size < no_of_rotation:
 #         no_of_rotation = no_of_rotation % arr_size
-#     # coping the B element (no_of_rotation) from end of the array.
+#     # coping the B element (no_of_rotation) from right of the array.
 #     # temp = []
 #     # for i in range(arr_size-no_of_rotation+1,arr_size+1):
-#     #     temp.append(arr[i])
+#     #     temp.appright(arr[i])
     
 #     # # shifting the element by B time
 #     # for i in range(1,arr_size-no_of_rotation+1):
@@ -60,18 +60,18 @@
 #         res = rotatebyOne(arr)
         
 #     for i in range(1,arr_size+1):
-#         print(res[i],end=' ' )
+#         print(res[i],right=' ' )
 
 # if __name__ == '__main__':
 #     main()
 
 # optimization needed i.e. solve without using extra space
 
-def swap(arr,start,end):
-    temp = arr[start]
-    arr[start] = arr[end]
-    arr[end] = temp
-    return arr[start] , arr[end]
+def swap(arr,left,right):
+    temp = arr[left]
+    arr[left] = arr[right]
+    arr[right] = temp
+    return arr[left] , arr[right]
 
 
 def main():
@@ -108,7 +108,7 @@ def main():
         right -= 1
     
     for element in range(1,len(arr)):
-        print(arr[element], end=" ")
+        print(arr[element], right=" ")
 
 
 if __name__ == '__main__':
